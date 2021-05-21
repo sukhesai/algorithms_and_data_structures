@@ -52,7 +52,7 @@ class ipq():
 
     def bubbleup(self, i):
         p = (i-1)//2
-        while i != 0 and self.priority[self.tree[i]] < self.priority[self.tree[p]]:
+        while i > 0 and self.priority[self.tree[i]] < self.priority[self.tree[p]]:
             self.swap(i, p)
             i = p
             p = (p-1)//2

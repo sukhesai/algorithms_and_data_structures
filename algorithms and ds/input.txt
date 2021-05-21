@@ -1,0 +1,335 @@
+e.vault_vms[2] (remote-exec): ✓ Installed ase/vault_bin/1.3.5/20200513131358
+null_resource.vault_vms[0] (remote-exec): ✓ Installed core/curl/7.68.0/20200506083330
+null_resource.vault_vms[0] (remote-exec): ✓ Installed ase/vault/1.3.5/20200518151744
+null_resource.vault_vms[0] (remote-exec): ★ Install of ase/vault/1.3.5/20200518151744 complete with 4 new packages installed.
+null_resource.vault_vms[0] (remote-exec): The ase/vault service was successfully loaded
+null_resource.vault_vms[0] (remote-exec): package                                      type        desired  state  elapsed (s)  pid    group
+null_resource.vault_vms[0] (remote-exec): aos/chef-base/0.3.134/20210301162546         standalone  up       up     10           29215  chef-base.default@aseprodorg
+null_resource.vault_vms[0] (remote-exec): coreapps/sdcss/6.8.2/20200720150235          standalone  up       up     9            29223  sdcss.default@aseprodorg
+null_resource.vault_vms[0] (remote-exec): aos/qvm-ssh/0.0.8/20210120223133             standalone  up       up     9            29307  qvm-ssh.default@aseprodorg
+null_resource.vault_vms[0] (remote-exec): ase/ford_inspec_broker/0.4.5/20200901131417  standalone  up       up     9            29314  ford_inspec_broker.default@aseprodorg
+null_resource.vault_vms[2] (remote-exec): ✓ Installed core/curl/7.68.0/20200506083330
+null_resource.vault_vms[2] (remote-exec): ✓ Installed ase/vault/1.3.5/20200518151744
+null_resource.vault_vms[2] (remote-exec): ★ Install of ase/vault/1.3.5/20200518151744 complete with 4 new packages installed.
+null_resource.vault_vms[2] (remote-exec): The ase/vault service was successfully loaded
+null_resource.vault_vms[2] (remote-exec): package                                      type        desired  state  elapsed (s)  pid    group
+null_resource.vault_vms[2] (remote-exec): aos/qvm-ssh/0.0.8/20210120223133             standalone  up       up     11           29118  qvm-ssh.default@aseprodorg
+null_resource.vault_vms[2] (remote-exec): coreapps/sdcss/6.8.2/20200720150235          standalone  up       up     10           29124  sdcss.default@aseprodorg
+null_resource.vault_vms[2] (remote-exec): ase/ford_inspec_broker/0.4.5/20200901131417  standalone  up       up     10           29206  ford_inspec_broker.default@aseprodorg
+null_resource.vault_vms[2] (remote-exec): aos/chef-base/0.3.134/20210301162546         standalone  up       up     10           29217  chef-base.default@aseprodorg
+null_resource.vault_vms[1] (remote-exec): ✓ Installed ase/vault_bin/1.3.5/20200513131358
+null_resource.vault_vms[1] (remote-exec): ✓ Installed core/curl/7.68.0/20200506083330
+null_resource.vault_vms[1] (remote-exec): ✓ Installed ase/vault/1.3.5/20200518151744
+null_resource.vault_vms[1] (remote-exec): ★ Install of ase/vault/1.3.5/20200518151744 complete with 4 new packages installed.
+null_resource.vault_vms[1] (remote-exec): The ase/vault service was successfully loaded
+null_resource.vault_vms[1] (remote-exec): package                                      type        desired  state  elapsed (s)  pid    group
+null_resource.vault_vms[1] (remote-exec): aos/chef-base/0.3.134/20210301162546         standalone  up       up     10           29092  chef-base.default@aseprodorg
+null_resource.vault_vms[1] (remote-exec): coreapps/sdcss/6.8.2/20200720150235          standalone  up       up     9            29100  sdcss.default@aseprodorg
+null_resource.vault_vms[1] (remote-exec): aos/qvm-ssh/0.0.8/20210120223133             standalone  up       up     9            29182  qvm-ssh.default@aseprodorg
+null_resource.vault_vms[1] (remote-exec): ase/ford_inspec_broker/0.4.5/20200901131417  standalone  up       up     9            29191  ford_inspec_broker.default@aseprodorg
+null_resource.vault_vms[0]: Creation complete after 1m57s [id=4033767601024732219]
+null_resource.vault_vms[2]: Creation complete after 1m57s [id=934833184851014733]
+null_resource.vault_vms[1]: Creation complete after 1m57s [id=5873245955685974888]
+null_resource.haproxy_vms[0]: Creating...
+null_resource.haproxy_vms[0]: Provisioning with 'file'...
+null_resource.haproxy_vms[0]: Provisioning with 'file'...
+null_resource.haproxy_vms[0]: Still creating... [10s elapsed]
+null_resource.haproxy_vms[0]: Provisioning with 'file'...
+null_resource.haproxy_vms[0]: Still creating... [20s elapsed]
+null_resource.haproxy_vms[0]: Provisioning with 'file'...
+null_resource.haproxy_vms[0]: Provisioning with 'file'...
+null_resource.haproxy_vms[0]: Still creating... [30s elapsed]
+null_resource.haproxy_vms[0]: Provisioning with 'file'...
+null_resource.haproxy_vms[0]: Provisioning with 'file'...
+null_resource.haproxy_vms[0]: Still creating... [40s elapsed]
+null_resource.haproxy_vms[0]: Provisioning with 'file'...
+null_resource.haproxy_vms[0]: Still creating... [50s elapsed]
+null_resource.haproxy_vms[0]: Provisioning with 'file'...
+null_resource.haproxy_vms[0]: Provisioning with 'file'...
+null_resource.haproxy_vms[0]: Still creating... [1m0s elapsed]
+null_resource.haproxy_vms[0]: Provisioning with 'remote-exec'...
+null_resource.haproxy_vms[0] (remote-exec): Connecting to remote host via SSH...
+null_resource.haproxy_vms[0] (remote-exec):   Host: ito088687.hosts.cloud.ford.com
+null_resource.haproxy_vms[0] (remote-exec):   User: chefbld
+null_resource.haproxy_vms[0] (remote-exec):   Password: false
+null_resource.haproxy_vms[0] (remote-exec):   Private key: true
+null_resource.haproxy_vms[0] (remote-exec):   Certificate: false
+null_resource.haproxy_vms[0] (remote-exec):   SSH Agent: true
+null_resource.haproxy_vms[0] (remote-exec):   Checking Host Key: false
+null_resource.haproxy_vms[0] (remote-exec): Connected!
+null_resource.haproxy_vms[0]: Still creating... [1m10s elapsed]
+null_resource.haproxy_vms[0] (remote-exec): » Installing core/hab/1.6.0
+null_resource.haproxy_vms[0] (remote-exec): ☁ Determining latest version of core/hab/1.6.0 in the 'stable' channel
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/hab/1.6.0/20200420200029 for x86_64-linux
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/hab/1.6.0/20200420200029
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/hab/1.6.0/20200420200029
+null_resource.haproxy_vms[0] (remote-exec): ★ Install of core/hab/1.6.0/20200420200029 complete with 1 new packages installed.
+null_resource.haproxy_vms[0] (remote-exec): » Binlinking hab from core/hab/1.6.0/20200420200029 into /bin
+null_resource.haproxy_vms[0] (remote-exec): ★ Binlinked hab from core/hab/1.6.0/20200420200029 to /bin/hab
+null_resource.haproxy_vms[0] (remote-exec): » Installing core/hab-sup/1.6.0
+null_resource.haproxy_vms[0] (remote-exec): ☁ Determining latest version of core/hab-sup/1.6.0 in the 'stable' channel
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/hab-sup/1.6.0/20200420202331
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/hab-sup/1.6.0/20200420202331
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/busybox-static/1.29.2/20190115014552
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/busybox-static/1.29.2/20190115014552
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/bzip2/1.0.6/20190115011950
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/bzip2/1.0.6/20190115011950
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/cacerts/2018.12.05/20190115014206
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/cacerts/2018.12.05/20190115014206
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/gcc-libs/8.2.0/20190115011926
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/gcc-libs/8.2.0/20190115011926
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/glibc/2.27/20190115002733
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/glibc/2.27/20190115002733
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/libarchive/3.3.3/20190305214120
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/libarchive/3.3.3/20190305214120
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/libsodium/1.0.16/20190116014025
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/libsodium/1.0.16/20190116014025
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/linux-headers/4.17.12/20190115002705
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/linux-headers/4.17.12/20190115002705
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/openssl-fips/2.0.16/20190115014207
+null_resource.haproxy_vms[0]: Still creating... [1m20s elapsed]
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/openssl-fips/2.0.16/20190115014207
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/openssl/1.0.2r/20190305210149
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/openssl/1.0.2r/20190305210149
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/xz/5.2.4/20190115013348
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/xz/5.2.4/20190115013348
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/zeromq/4.3.1/20190802173651
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/zeromq/4.3.1/20190802173651
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/zlib/1.2.11/20190115003728
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/zlib/1.2.11/20190115003728
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/busybox-static/1.29.2/20190115014552
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/bzip2/1.0.6/20190115011950
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/cacerts/2018.12.05/20190115014206
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/gcc-libs/8.2.0/20190115011926
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/glibc/2.27/20190115002733
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/libarchive/3.3.3/20190305214120
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/libsodium/1.0.16/20190116014025
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/linux-headers/4.17.12/20190115002705
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/openssl-fips/2.0.16/20190115014207
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/openssl/1.0.2r/20190305210149
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/xz/5.2.4/20190115013348
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/zeromq/4.3.1/20190802173651
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/zlib/1.2.11/20190115003728
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/hab-sup/1.6.0/20200420202331
+null_resource.haproxy_vms[0] (remote-exec): ★ Install of core/hab-sup/1.6.0/20200420202331 complete with 14 new packages installed.
+null_resource.haproxy_vms[0] (remote-exec): » Binlinking hab-sup from core/hab-sup/1.6.0/20200420202331 into /bin
+null_resource.haproxy_vms[0] (remote-exec): ★ Binlinked hab-sup from core/hab-sup/1.6.0/20200420202331 to /bin/hab-sup
+null_resource.haproxy_vms[0] (remote-exec): » Installing core/hab-launcher
+null_resource.haproxy_vms[0] (remote-exec): ☁ Determining latest version of core/hab-launcher in the 'stable' channel
+null_resource.haproxy_vms[0] (remote-exec): → Using core/hab-launcher/15249/20210304191504
+null_resource.haproxy_vms[0] (remote-exec): ★ Install of core/hab-launcher/15249/20210304191504 complete with 0 new packages installed.
+null_resource.haproxy_vms[0] (remote-exec): » Binlinking hab-launch from core/hab-launcher/15249/20210304191504 into /bin
+null_resource.haproxy_vms[0] (remote-exec): ★ Binlinked hab-launch from core/hab-launcher/15249/20210304191504 to /bin/hab-launch
+null_resource.haproxy_vms[0]: Still creating... [1m30s elapsed]
+null_resource.haproxy_vms[0] (remote-exec): » Installing ase/haproxy
+null_resource.haproxy_vms[0] (remote-exec): ☁ Determining latest version of ase/haproxy in the 'app_dev' channel
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading ase/haproxy/2.0.7/20191029181608 for x86_64-linux
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying ase/haproxy/2.0.7/20191029181608
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading ase-20191015175208 public origin key
+null_resource.haproxy_vms[0] (remote-exec): 
+null_resource.haproxy_vms[0] (remote-exec):     74 B / 74 B |  100.00 % 12.75 MB/s  ☑ Cached ase-20191015175208 public origin key
+null_resource.haproxy_vms[0] (remote-exec): → Using core/cacerts/2018.12.05/20190115014206
+null_resource.haproxy_vms[0] (remote-exec): → Using core/gcc-libs/8.2.0/20190115011926
+null_resource.haproxy_vms[0] (remote-exec): → Using core/glibc/2.27/20190115002733
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/haproxy/2.0.7/20191022103347 for x86_64-linux
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/haproxy/2.0.7/20191022103347
+null_resource.haproxy_vms[0] (remote-exec): → Using core/linux-headers/4.17.12/20190115002705
+null_resource.haproxy_vms[0] (remote-exec): → Using core/openssl-fips/2.0.16/20190115014207
+null_resource.haproxy_vms[0] (remote-exec): → Using core/openssl/1.0.2r/20190305210149
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/pcre/8.42/20190115012526 for x86_64-linux
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/pcre/8.42/20190115012526
+null_resource.haproxy_vms[0] (remote-exec): → Using core/zlib/1.2.11/20190115003728
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/haproxy/2.0.7/20191022103347
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/pcre/8.42/20190115012526
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed ase/haproxy/2.0.7/20191029181608
+null_resource.haproxy_vms[0] (remote-exec): ★ Install of ase/haproxy/2.0.7/20191029181608 complete with 3 new packages installed.
+null_resource.haproxy_vms[0] (remote-exec): The ase/haproxy service was successfully loaded
+null_resource.haproxy_vms[0] (remote-exec): 
+null_resource.haproxy_vms[0] (remote-exec): » Installing ase/onboarding_api
+null_resource.haproxy_vms[0] (remote-exec): ☁ Determining latest version of ase/onboarding_api in the 'unstable' channel
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading ase/onboarding_api/2.0.18/20210324123906 for x86_64-linux
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying ase/onboarding_api/2.0.18/20210324123906
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading ase-20200331121134 public origin key
+null_resource.haproxy_vms[0] (remote-exec): 
+null_resource.haproxy_vms[0] (remote-exec):     74 B / 74 B |  100.00 % 8.83 MB/s   ☑ Cached ase-20200331121134 public origin key
+null_resource.haproxy_vms[0] (remote-exec): → Using core/acl/2.2.53/20200305230628
+null_resource.haproxy_vms[0] (remote-exec): → Using core/attr/2.4.48/20200305230504
+null_resource.haproxy_vms[0] (remote-exec): → Using core/binutils/2.32/20200305174809
+null_resource.haproxy_vms[0] (remote-exec): → Using core/bzip2/1.0.8/20200305225842
+null_resource.haproxy_vms[0] (remote-exec): → Using core/cacerts/2020.01.01/20200306005234
+null_resource.haproxy_vms[0] (remote-exec): → Using core/coreutils/8.30/20200305231640
+null_resource.haproxy_vms[0] (remote-exec): → Using core/curl/7.68.0/20200601114640
+null_resource.haproxy_vms[0] (remote-exec): → Using core/db/5.3.28/20200305234355
+null_resource.haproxy_vms[0] (remote-exec): → Using core/expat/2.2.7/20200305234221
+null_resource.haproxy_vms[0] (remote-exec): → Using core/gcc-libs/9.1.0/20200305225533
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/gcc/9.1.0/20200305180723 for x86_64-linux
+null_resource.haproxy_vms[0]: Still creating... [1m40s elapsed]
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/gcc/9.1.0/20200305180723
+null_resource.haproxy_vms[0] (remote-exec): → Using core/gdbm/1.18.1/20200305234038
+null_resource.haproxy_vms[0] (remote-exec): → Using core/gettext/0.20.1/20200306001518
+null_resource.haproxy_vms[0] (remote-exec): → Using core/git/2.26.2/20200601121014
+null_resource.haproxy_vms[0] (remote-exec): → Using core/glibc/2.29/20200305172459
+null_resource.haproxy_vms[0] (remote-exec): → Using core/gmp/6.1.2/20200305175803
+null_resource.haproxy_vms[0] (remote-exec): → Using core/grep/3.3/20200305232635
+null_resource.haproxy_vms[0] (remote-exec): → Using core/jq-static/1.6/20200404003518
+null_resource.haproxy_vms[0] (remote-exec): → Using core/less/530/20200305235121
+null_resource.haproxy_vms[0] (remote-exec): → Using core/libcap/2.27/20200305230759
+null_resource.haproxy_vms[0] (remote-exec): → Using core/libffi/3.2.1/20200310021445
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/libmpc/1.1.0/20200305180541 for x86_64-linux
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/libmpc/1.1.0/20200305180541
+null_resource.haproxy_vms[0] (remote-exec): → Using core/libtool/2.4.6/20200305233901
+null_resource.haproxy_vms[0] (remote-exec): → Using core/linux-headers/4.19.62/20200305172241
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/mpfr/4.0.1/20200305180218 for x86_64-linux
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/mpfr/4.0.1/20200305180218
+null_resource.haproxy_vms[0] (remote-exec): → Using core/ncurses/6.1/20200305230210
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/net-tools/1.60/20200403225919 for x86_64-linux
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/net-tools/1.60/20200403225919
+null_resource.haproxy_vms[0] (remote-exec): → Using core/nghttp2/1.40.0/20200506083229
+null_resource.haproxy_vms[0] (remote-exec): → Using core/openssh/7.5p1/20200319192011
+null_resource.haproxy_vms[0] (remote-exec): → Using core/openssl-fips/2.0.16/20200306005307
+null_resource.haproxy_vms[0] (remote-exec): → Using core/openssl/1.0.2t/20200306005450
+null_resource.haproxy_vms[0] (remote-exec): → Using core/pcre/8.42/20200305232429
+null_resource.haproxy_vms[0] (remote-exec): → Using core/perl/5.30.0/20200305235250
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/python/3.7.0/20200310040007 for x86_64-linux
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/python/3.7.0/20200310040007
+null_resource.haproxy_vms[0] (remote-exec): → Using core/readline/8.0/20200305232850
+null_resource.haproxy_vms[0] (remote-exec): → Using core/sed/4.5/20200305230928
+null_resource.haproxy_vms[0] (remote-exec): ↓ Downloading core/sqlite/3.31.1/20200310021605 for x86_64-linux
+null_resource.haproxy_vms[0] (remote-exec): ☛ Verifying core/sqlite/3.31.1/20200310021605
+null_resource.haproxy_vms[0] (remote-exec): → Using core/xz/5.2.4/20200306001321
+null_resource.haproxy_vms[0] (remote-exec): → Using core/zlib/1.2.11/20200305174519
+null_resource.haproxy_vms[0]: Still creating... [1m50s elapsed]
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/gcc/9.1.0/20200305180723
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/libmpc/1.1.0/20200305180541
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/mpfr/4.0.1/20200305180218
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/net-tools/1.60/20200403225919
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/python/3.7.0/20200310040007
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed core/sqlite/3.31.1/20200310021605
+null_resource.haproxy_vms[0] (remote-exec): ✓ Installed ase/onboarding_api/2.0.18/20210324123906
+null_resource.haproxy_vms[0] (remote-exec): ★ Install of ase/onboarding_api/2.0.18/20210324123906 complete with 7 new packages installed.
+null_resource.haproxy_vms[0] (remote-exec): The ase/onboarding_api service was successfully loaded
+null_resource.haproxy_vms[0] (remote-exec): mv: cannot move '/var/tmp/policies_key' to '/hab/svc/onboarding_api/config/.'
+null_resource.haproxy_vms[0] (remote-exec): : No such file or directory
+null_resource.haproxy_vms[0] (remote-exec): mv: cannot stat '/hab/svc/onboarding_api/config/config': No such file or directory
+null_resource.haproxy_vms[0] (remote-exec): Supervisor stopping ase/onboarding_api. See the Supervisor output for more details.
+null_resource.haproxy_vms[0] (remote-exec): package                                      type        desired  state  elapsed (s)  pid   group
+null_resource.haproxy_vms[0] (remote-exec): aos/chef-base/0.3.134/20210301162546         standalone  up       up     26           6344  chef-base.default@aseprodorg
+null_resource.haproxy_vms[0] (remote-exec): ase/ford_inspec_broker/0.4.5/20200901131417  standalone  up       up     25           6352  ford_inspec_broker.default@aseprodorg
+null_resource.haproxy_vms[0] (remote-exec): aos/qvm-ssh/0.0.8/20210120223133             standalone  up       up     25           6363  qvm-ssh.default@aseprodorg
+null_resource.haproxy_vms[0] (remote-exec): coreapps/sdcss/6.8.2/20200720150235          standalone  up       up     25           6499  sdcss.default@aseprodorg
+null_resource.haproxy_vms[0] (remote-exec): ase/haproxy/2.0.7/20191029181608             standalone  up       up     22           7302  haproxy.dev_cluster@aseprodorg
+null_resource.haproxy_vms[0]: Creation complete after 1m58s [id=2010302237065136437]
+null_resource.vault_policies_vms[0]: Creating...
+null_resource.vault_policies_vms[0]: Provisioning with 'file'...
+null_resource.vault_policies_vms[0]: Provisioning with 'file'...
+null_resource.vault_policies_vms[0]: Still creating... [10s elapsed]
+null_resource.vault_policies_vms[0]: Provisioning with 'file'...
+null_resource.vault_policies_vms[0]: Provisioning with 'file'...
+null_resource.vault_policies_vms[0]: Still creating... [20s elapsed]
+null_resource.vault_policies_vms[0]: Provisioning with 'file'...
+null_resource.vault_policies_vms[0]: Still creating... [30s elapsed]
+null_resource.vault_policies_vms[0]: Provisioning with 'file'...
+null_resource.vault_policies_vms[0]: Provisioning with 'file'...
+null_resource.vault_policies_vms[0]: Still creating... [40s elapsed]
+null_resource.vault_policies_vms[0]: Provisioning with 'file'...
+null_resource.vault_policies_vms[0]: Provisioning with 'file'...
+null_resource.vault_policies_vms[0]: Still creating... [50s elapsed]
+null_resource.vault_policies_vms[0]: Provisioning with 'remote-exec'...
+null_resource.vault_policies_vms[0] (remote-exec): Connecting to remote host via SSH...
+null_resource.vault_policies_vms[0] (remote-exec):   Host: ito088690.hosts.cloud.ford.com
+null_resource.vault_policies_vms[0] (remote-exec):   User: chefbld
+null_resource.vault_policies_vms[0] (remote-exec):   Password: false
+null_resource.vault_policies_vms[0] (remote-exec):   Private key: true
+null_resource.vault_policies_vms[0] (remote-exec):   Certificate: false
+null_resource.vault_policies_vms[0] (remote-exec):   SSH Agent: true
+null_resource.vault_policies_vms[0] (remote-exec):   Checking Host Key: false
+null_resource.vault_policies_vms[0] (remote-exec): Connected!
+null_resource.vault_policies_vms[0]: Still creating... [1m0s elapsed]
+null_resource.vault_policies_vms[0] (remote-exec): » Installing core/hab/1.6.0
+null_resource.vault_policies_vms[0] (remote-exec): ☁ Determining latest version of core/hab/1.6.0 in the 'stable' channel
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/hab/1.6.0/20200420200029 for x86_64-linux
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/hab/1.6.0/20200420200029
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/hab/1.6.0/20200420200029
+null_resource.vault_policies_vms[0] (remote-exec): ★ Install of core/hab/1.6.0/20200420200029 complete with 1 new packages installed.
+null_resource.vault_policies_vms[0] (remote-exec): » Binlinking hab from core/hab/1.6.0/20200420200029 into /bin
+null_resource.vault_policies_vms[0] (remote-exec): ★ Binlinked hab from core/hab/1.6.0/20200420200029 to /bin/hab
+null_resource.vault_policies_vms[0] (remote-exec): » Installing core/hab-sup/1.6.0
+null_resource.vault_policies_vms[0] (remote-exec): ☁ Determining latest version of core/hab-sup/1.6.0 in the 'stable' channel
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/hab-sup/1.6.0/20200420202331
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/hab-sup/1.6.0/20200420202331
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/busybox-static/1.29.2/20190115014552
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/busybox-static/1.29.2/20190115014552
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/bzip2/1.0.6/20190115011950
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/bzip2/1.0.6/20190115011950
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/cacerts/2018.12.05/20190115014206
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/cacerts/2018.12.05/20190115014206
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/gcc-libs/8.2.0/20190115011926
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/gcc-libs/8.2.0/20190115011926
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/glibc/2.27/20190115002733
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/glibc/2.27/20190115002733
+null_resource.vault_policies_vms[0]: Still creating... [1m10s elapsed]
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/libarchive/3.3.3/20190305214120
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/libarchive/3.3.3/20190305214120
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/libsodium/1.0.16/20190116014025
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/libsodium/1.0.16/20190116014025
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/linux-headers/4.17.12/20190115002705
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/linux-headers/4.17.12/20190115002705
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/openssl-fips/2.0.16/20190115014207
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/openssl-fips/2.0.16/20190115014207
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/openssl/1.0.2r/20190305210149
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/openssl/1.0.2r/20190305210149
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/xz/5.2.4/20190115013348
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/xz/5.2.4/20190115013348
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/zeromq/4.3.1/20190802173651
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/zeromq/4.3.1/20190802173651
+null_resource.vault_policies_vms[0] (remote-exec): ↓ Downloading core/zlib/1.2.11/20190115003728
+null_resource.vault_policies_vms[0] (remote-exec): ☛ Verifying core/zlib/1.2.11/20190115003728
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/busybox-static/1.29.2/20190115014552
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/bzip2/1.0.6/20190115011950
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/cacerts/2018.12.05/20190115014206
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/gcc-libs/8.2.0/20190115011926
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/glibc/2.27/20190115002733
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/libarchive/3.3.3/20190305214120
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/libsodium/1.0.16/20190116014025
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/linux-headers/4.17.12/20190115002705
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/openssl-fips/2.0.16/20190115014207
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/openssl/1.0.2r/20190305210149
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/xz/5.2.4/20190115013348
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/zeromq/4.3.1/20190802173651
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/zlib/1.2.11/20190115003728
+null_resource.vault_policies_vms[0] (remote-exec): ✓ Installed core/hab-sup/1.6.0/20200420202331
+null_resource.vault_policies_vms[0] (remote-exec): ★ Install of core/hab-sup/1.6.0/20200420202331 complete with 14 new packages installed.
+null_resource.vault_policies_vms[0] (remote-exec): » Binlinking hab-sup from core/hab-sup/1.6.0/20200420202331 into /bin
+null_resource.vault_policies_vms[0] (remote-exec): ★ Binlinked hab-sup from core/hab-sup/1.6.0/20200420202331 to /bin/hab-sup
+null_resource.vault_policies_vms[0] (remote-exec): » Installing core/hab-launcher
+null_resource.vault_policies_vms[0] (remote-exec): ☁ Determining latest version of core/hab-launcher in the 'stable' channel
+null_resource.vault_policies_vms[0] (remote-exec): → Using core/hab-launcher/15249/20210304191504
+null_resource.vault_policies_vms[0] (remote-exec): ★ Install of core/hab-launcher/15249/20210304191504 complete with 0 new packages installed.
+null_resource.vault_policies_vms[0] (remote-exec): » Binlinking hab-launch from core/hab-launcher/15249/20210304191504 into /bin
+null_resource.vault_policies_vms[0] (remote-exec): ★ Binlinked hab-launch from core/hab-launcher/15249/20210304191504 to /bin/hab-launch
+null_resource.vault_policies_vms[0]: Still creating... [1m20s elapsed]
+null_resource.vault_policies_vms[0] (remote-exec): usage: sudo -h | -K | -k | -V
+null_resource.vault_policies_vms[0] (remote-exec): usage: sudo -v [-AknS] [-g group] [-h
+null_resource.vault_policies_vms[0] (remote-exec):             host] [-p prompt] [-u user]
+null_resource.vault_policies_vms[0] (remote-exec): usage: sudo -l [-AknS] [-g group] [-h
+null_resource.vault_policies_vms[0] (remote-exec):             host] [-p prompt] [-U user]
+null_resource.vault_policies_vms[0] (remote-exec):             [-u user] [command]
+null_resource.vault_policies_vms[0] (remote-exec): usage: sudo [-AbEHknPS] [-r role] [-t
+null_resource.vault_policies_vms[0] (remote-exec):             type] [-C num] [-g group]
+null_resource.vault_policies_vms[0] (remote-exec):             [-h host] [-p prompt] [-T
+null_resource.vault_policies_vms[0] (remote-exec):             timeout] [-u user]
+null_resource.vault_policies_vms[0] (remote-exec):             [VAR=value] [-i|-s]
+null_resource.vault_policies_vms[0] (remote-exec):             [<command>]
+null_resource.vault_policies_vms[0] (remote-exec): usage: sudo -e [-AknS] [-r role] [-t
+null_resource.vault_policies_vms[0] (remote-exec):             type] [-C num] [-g group]
+null_resource.vault_policies_vms[0] (remote-exec):             [-h host] [-p prompt] [-T
+null_resource.vault_policies_vms[0] (remote-exec):             timeout] [-u user] file ...
+null_resource.vault_policies_vms[0] (remote-exec): ✗✗✗
+null_resource.vault_policies_vms[0] (remote-exec): ✗✗✗ unexpected end of file
+null_resource.vault_policies_vms[0] (remote-exec): ✗✗✗
+
+
+Error: error executing "/var/tmp/script.sh": Process exited with status 1
+
+
+root:/Users/ssumit1/tf_ford_vault_prov~$ 

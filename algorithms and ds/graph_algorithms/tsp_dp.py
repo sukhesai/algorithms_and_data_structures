@@ -1,27 +1,20 @@
-import math
+import math, itertools
 
 
 def setup(s=0):
+    k = 1 << s
     for i in range(n):
         if i == s:
             continue
-        dp[i][1 << s | 1 << i] = m[s][i]
+        dp[i][ k | (1 << i)] = m[s][i]
 
 
-def get_multiset(r, n):
-    result = []
-    get_multiset1(0, 0, r, n, result)
-    return result
-
-
-def get_multiset1(subset, i, r, n, result):
-    if r == 0:
-        result.append(subset)
-    else:
-        for j in range(i, n):
-            subset = subset | (1 << j)
-            get_multiset1(subset, j+1, r-1, n, result)
-            subset = subset & ~(1 << j)
+def get_multiset(r,n):
+    for positions in itertools.combinations(range(n),r):
+        ans = 0
+        for i in positions:
+            ans = ans | (1 << i)
+        yield ans
 
 
 def notin(subset, i):
@@ -37,10 +30,10 @@ def solve(s=0):
                 if nxt == s or notin(subset, nxt):
                     continue
                 last_state = subset ^ (1 << nxt)
-                for e in range(n):
-                    if s == e or e == nxt or notin(subset, e):
+                for last_node in range(n):
+                    if s == last_node or last_node == nxt or notin(subset, last_node):
                         continue
-                    newdistance = dp[e][last_state] + m[e][nxt]
+                    newdistance = dp[last_node][last_state] + m[last_node][nxt]
                     if newdistance < dp[nxt][subset]:
                         dp[nxt][subset] = newdistance
 

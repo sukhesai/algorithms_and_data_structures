@@ -1,6 +1,7 @@
 
 
 def dfs(i, id_no):
+    print(f'i:{i} id_no:{id_no}')
     stack.append(i)
     onstack[i] = True
     ids[i] = id_no
@@ -22,7 +23,7 @@ def dfs(i, id_no):
 
 
 g = [[1], [2, 3], [3, 5], [4, 7], [], [6, 9], [2], [3, 8], [], []]
-n = 10
+n = len(g)
 low = [None]*n
 ids = [None]*n
 onstack = [False]*n
