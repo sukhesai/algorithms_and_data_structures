@@ -35,17 +35,17 @@ class fenwicktree2:
 
     def point_query(self, i):
         s = a[i]
-        i = i + 1
+        i += 1
         while i > 0:
             s += self.tree[i]
             i -= lsb(i)
         return s
 
     def update_range(self, i, j, b):
-        self.point_update(i, b)
-        self.point_update(j+1, -b)
+        self.prefix_update(i, b)
+        self.prefix_update(j+1, -b)
 
-    def point_update(self, i, b):
+    def prefix_update(self, i, b):
         i += 1
         while i < len(self.tree):
             self.tree[i] += b
