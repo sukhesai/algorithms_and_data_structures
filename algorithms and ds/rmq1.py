@@ -1,15 +1,13 @@
 import math
 
-b=[0,1,2,3,4,5,6,7,8]
-a=[0,5,2,5,4,3,1,6,3]
-l=len(a)
-dp=[[] for i in range(l)]
-for i in range(l):
-    dp[i].append(a[i])
+
+a = [0,5,2,5,4,3,1,6,3]
+l = len(a)
+dp = [[i] for i in a]
 j = 1
-while 2**j-1<l:
-    i=0
-    while i+2**j-1<l:
+while 2**j <= l:
+    i = 0
+    while i+2**j <= l:
         dp[i].append(min(dp[i][j-1],dp[i+2**(j-1)][j-1]))
         i += 1
     j += 1
