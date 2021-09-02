@@ -19,18 +19,19 @@ def suffix_array(a):
     return [sa[i][1] for i in range(n)]
 
 
-def lcp_array():
-    lcp = [0]*n
-    rank = ranklist[numbr_iter]
-    k = 0
-    for i in range(n):
-        if k != 0:
-            k -= 1
-        if rank[i] != 0:
-            j = SA[rank[i]-1]
-            while i + k < n and j + k < n and a[i + k] == a[j + k]:
-                k += 1
-            lcp[rank[i]] = k
+def lcp_array(sa, a):
+    rank = [0]*len(a)
+    lcp = list(rank)
+    for i in range(len(a)):
+        rank[sa[i]] = i
+    for i in range(len(a)):
+        if rank[i] == len(a) - 1:
+            k = 0
+            continue
+        j = sa[rank[i]+1]
+        while j+k < len(a) and i+k < len(a) and s[j+k] == s[i+k]:
+            k += 1
+        lcp[rank[i]] = k
     return lcp
 
 
