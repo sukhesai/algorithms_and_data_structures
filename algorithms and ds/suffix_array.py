@@ -1,37 +1,22 @@
-import math
-a = 'banana'
-n = len(a)
-numbr_iter = math.ceil(math.log2(n))
+
 
 def suffix_array(a):
-    rnklst = [[None]*n]*(numbr_iter + 1)
-    rnklst[0] = [ord(a[i]) - ord('a') for i in range(n)]
-    step = 1
-    offset = 1
-    while step <= numbr_iter:
-        L = [None]*n
+    n, l = len(a), 0
+    sa = [[a[i],i] for i in range(n)]
+    pos_map = [None]*n
+    while l < n:
+        sa.sort(key=lambda x: x[0])
+        rank, last = 0, sa[0][0]
         for i in range(n):
-            try:
-                L[i] = [(rnklst[step - 1][i], rnklst[step - 1][i + offset]), i]
-            except IndexError:
-                L[i] = [(rnklst[step - 1][i], -1), i]
-        L.sort()
-        pr_rank = L[0][0]
-        L[0][0] = 0
-        rank = 0
-        for i in range(1, n):
-            if pr_rank != L[i][0]:
+            pos_map[sa[i][1]] = i
+            if sa[i][0] != last:
                 rank += 1
-            pr_rank = L[i][0]
-            L[i][0] = rank
-        for i in range(n):
-            rnklst[step][L[i][1]] = L[i][0]
-        step += 1
-        offset *= 2
-    SA = [None]*n
-    for i in range(n):
-        SA[rnklst[numbr_iter][i]] = i
-    return SA, rnklst
+                last = sa[i][0]
+            sa[i][0] = rank
+        new_tuple = [(sa[i][0], sa[pos_map[sa[i][1]+l]][0] if sa[i][1]+l < n else -1) for i in range(n)]
+        sa = [[new_tuple[i],sa[i][1]] for i in range(n)]
+        l = 1 if not l else l << 1
+    return [sa[i][1] for i in range(n)]
 
 
 def lcp_array():
