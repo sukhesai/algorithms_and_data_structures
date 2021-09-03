@@ -4,7 +4,7 @@ def suffix_array(a):
     n, l = len(a), 0
     sa = [[a[i],i] for i in range(n)]
     pos_map = [None]*n
-    while l < n:
+    while l < 2*n:
         sa.sort(key=lambda x: x[0])
         rank, last = 0, sa[0][0]
         for i in range(n):
